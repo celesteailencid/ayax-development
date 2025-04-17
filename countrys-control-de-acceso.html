@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<!-- Metadatos -->
+	<meta charset="UTF-8">
+	<meta name="author" content="Ayax">
+	<meta name="description" content="Sistemas de Seguridad Ayax">
+	<meta name="keywords" content="Ayax, Seguridad">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Titulo -->
+	<title>Control de acceso - Countrys | Ayax - Sistemas de Seguridad</title>
+	<!-- Favicon -->
+
+	<!-- Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	<!-- Scripts -->
+	<script type="text/javascript" data-mutate-approach="sync" src="https://kit.fontawesome.com/6219da6e02.js"></script>
+	<!-- CSS Animaciones AOS -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<!-- CSS Custom -->
+	<link rel="stylesheet" type="text/css" href="style/countrys-control-de-acceso.css">
+</head>
+
+<body>
+
+	<!-- START Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top container-fluid">
+
+		<div>
+			<a class="navbar-brand-light logo-visible" href="index.html">
+				<img src="svg/logo-ayax-light.svg" alt="Bootstrap" width="auto" height="auto">
+			</a>
+			<a class="navbar-brand-dark logo-hidden" href="index.html">
+				<img src="svg/Logo Ayax naranja.svg" alt="Bootstrap" width="auto" height="auto">
+			</a>
+
+		</div>
+
+		<div>
+
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+					<!-- Hogares -->
+					<li class="nav-item dropdown">
+						<a href="hogares.html" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false" aria-current="page"><i class="bi bi-house-door"></i> Hogares</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="hogares-seguridad-virtual.html">Seguridad Virtual</a>
+							</li>
+							<li><a class="dropdown-item" href="hogares-alarma-y-monitoreo.html">Alarmas y Monitoreo</a>
+							</li>
+						</ul>
+					</li>
+
+					<!-- Edificios -->
+					<li class="nav-item dropdown">
+						<a href="edificios.html" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false" aria-current="page"><i class="bi bi-building"></i> Edificios</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="edificios-seguridad-virtual.html">Seguridad Virtual</a>
+							</li>
+							<li><a class="dropdown-item" href="edificios-control-de-acceso.html">Control de acceso</a>
+							</li>
+							<li><a class="dropdown-item" href="edificios-porteria-virtual.html">Portería Virtual</a>
+							</li>
+							<li><a class="dropdown-item" href="edificios-seguridad-fisica.html">Seguridad Física</a>
+							</li>
+							<li><a class="dropdown-item" href="edificios-asistente-virtual.html">Asistente Virtual</a>
+							</li>
+						</ul>
+					</li>
+
+					<!-- Countrys -->
+					<li class="nav-item dropdown">
+						<a href="countrys.html" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false" aria-current="page"><i class="bi bi-houses"></i>
+							Countrys</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="countrys-seguridad-virtual.html">Seguridad Virtual</a>
+							</li>
+							<li><a class="dropdown-item" href="countrys-control-de-acceso.html">Control de acceso</a>
+							</li>
+							<li><a class="dropdown-item" href="countrys-porteria-virtual.html">Portería Virtual</a></li>
+						</ul>
+					</li>
+
+					<!-- Fabricas y comercios -->
+					<li class="nav-item dropdown">
+						<a href="fabricas-y-comercios.html" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false" aria-current="page"><i
+								class="bi bi-shop-window"></i> Fábricas y Comercios</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="fabricas-y-comercios-seguridad-virtual.html">Seguridad
+									Virtual</a></li>
+							<li><a class="dropdown-item" href="fabricas-y-comercios-alarmas-y-monitoreo.html">Alarmas y
+									Monitoreo</a></li>
+							<li><a class="dropdown-item" href="fabricas-y-comercios-control-de-acceso.html">Control de
+									acceso</a></li>
+							<li><a class="dropdown-item" href="fabricas-y-comercios-porteria-virtual.html">Portería
+									Virtual</a></li>
+							<li><a class="dropdown-item" href="fabricas-y-comercios-seguridad-fisica.html">Seguridad
+									Física</a></li>
+						</ul>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="#contacto"><i class="bi bi-headset"></i> Contactános</a>
+					</li>
+
+				</ul>
+
+			</div>
+
+		</div>
+		
+	</nav>
+	<!-- END Navbar -->
+
+	<!-- START Opening Section Hogar -->
+	<section class="hero-with-form">
+
+		<div class="container">
+
+			<div class="row">
+
+				<div class="container-title col-lg-6 col-11 mobile-center" data-aos="fade-right">
+					<div class="breadcrumb"><img src="imagenes/iconos/icono-edificios.svg">
+						<p>Soluciones para countrys</p>
+					</div>
+					<h1 class="mobile-center">Accesos seguros
+                        las 24 horas</h1>
+				</div>
+
+				<div class="col-lg-5 col-11 mobile-center container-form" data-aos="fade-left">
+					<h3>Solicitá asesoramiento gratuito</h3>
+					<form>
+						<label for="nombre">Nombre y apellido*</label>
+						<input type="text" id="nombre" name="nombre" required>
+
+						<label for="telefono">Whatsapp*</label>
+						<input type="tel" id="telefono" name="telefono" required>
+
+						<label for="servicio">Consulta</label>
+						<input type="text-area" id="consulta" name="consulta">
+
+						<button class="button-dark" type="submit">Enviar Consulta</button>
+						<p>* Campos Obligatorios</p>
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!-- END Opening Section -->
+
+
+	<!-- START Section boxed text Siempre protegido con VTO -->
+	<section class="boxed-text-siempre-protegido container-fluid">
+		<div class="container">
+			<div class="boxed-text row col-md-8 col-11">
+				<div class="caja-imagen-naranja" data-aos="fade-down">
+					<img src="imagenes/iconos/icono-puerta-abierta-flecha.svg">
+				</div>
+				<div class="caja-titulos">
+					<h2 data-aos="fade-down">Control de </h2>
+					<h2 data-aos="fade-down">acceso</h2>
+				</div>
+				<p data-aos="fade-down">
+					La seguridad en barrios privados y countrys depende de un sistema de control de acceso confiable, que regule con precisión el flujo de residentes y visitantes. En este contexto, los sistemas convencionales a menudo se quedan cortos frente a las necesidades complejas de estos entornos.
+				</p>
+                <br>
+                <p data-aos="fade-down">Ayax revoluciona este aspecto con una gama de soluciones de vanguardia en control de acceso, con propuestas diseñadas para satisfacer las demandas específicas de cada comunidad.</p>
+                <br>
+                <p data-aos="fade-down">Con Ayax, cada ingreso y salida se convierte en una operación segura, asegurando la tranquilidad de todos los residentes, a cualquier hora del día.</p>
+			</div>
+		</div>
+	</section>
+	<!-- END Section boxed text Siempre protegido con VTO -->
+
+
+    <!-- START Tabla controles de acceso -->
+    <section class="tabla-controles-de-acceso container-fluid">
+        <div class="container">
+            <div class="boxed-text row col-12">
+                <table class="table table-bordered">
+
+                    <thead data-aos="fade-down">
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Standard</th>
+                        <th scope="col">Premiun</th>
+                        <th scope="col">Máximo</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+
+                      <tr class="fila-1" data-aos="fade-down">
+                        <td scope="row"><p><img src="imagenes/control-de-acceso/icono-reconocimiento-facial.svg"> Ingreso con Reconocimiento Facial</p><p>Implementamos cámaras con tecnología de reconocimiento facial para una verificación segura e irreplicable de los residentes y visitantes autorizados.</p></td>
+                        <td><img src="imagenes/control-de-acceso/0-icono-cruz-roja.svg"></td>
+                        <td><img src="imagenes/control-de-acceso/0-icono-tilde-verde.svg"></td>
+                        <td><img src="imagenes/control-de-acceso/0-icono-tilde-verde.svg"></td>
+                      </tr>
+
+                      <tr class="fila-2" data-aos="fade-down">
+                        <td scope="row"><p><img src="imagenes/control-de-acceso/icono-huella-digital.png"> Ingreso con TAG Magnético o Clave</p><p>Ofrecemos sistemas de acceso que utilizan TAGs magnéticos o códigos numéricos personalizados, permitiendo un control fácil y seguro del flujo de personas.</p></td>
+                        <td><img src="imagenes/control-de-acceso/0-icono-tilde-verde.svg"></td>
+                        <td><img src="imagenes/control-de-acceso/0-icono-tilde-verde.svg"></td>
+                        <td><img src="imagenes/control-de-acceso/0-icono-tilde-verde.svg"></td>
+                      </tr>
+
+                      <tr class="fila-3" data-aos="fade-down">
+                        <td scope="row"><p><img src="imagenes/control-de-acceso/icono-calendario.svg"> Ingresos Personalizados</p><p>Permite configurar accesos específicos para visitantes, trabajadores y residentes, ajustando días y horarios para adaptarse a las rutinas del barrio o country.</p></td>
+                        <td><img src="imagenes/control-de-acceso/0-icono-tilde-verde.svg"></td>
+                        <td><img src="imagenes/control-de-acceso/0-icono-tilde-verde.svg"></td>
+                        <td><img src="imagenes/control-de-acceso/0-icono-tilde-verde.svg"></td>
+                      </tr>
+
+                      <tr class="fila-4" data-aos="fade-down">
+                        <td scope="row"><p><img src="imagenes/control-de-acceso/icono-contrasena.svg"> Clave de asalto</p><p>Dotamos a los residentes de un código de emergencia para usar en situaciones de coacción, asegurando una alerta discreta y efectiva a nuestro centro de monitoreo.</p></td>
+                        <td><img src="imagenes/control-de-acceso/0-icono-tilde-verde.svg"></td>
+                        <td><img src="imagenes/control-de-acceso/0-icono-tilde-verde.svg"></td>
+                        <td><img src="imagenes/control-de-acceso/0-icono-tilde-verde.svg"></td>
+                      </tr>
+
+                      <tr class="fila-5" data-aos="fade-down">
+                        <td scope="row"><p><img src="imagenes/control-de-acceso/icono-registro-24hs.svg"> Alerta 24hs</p><p>Nuestro sistema está preparado para responder ante aperturas forzadas o el uso de la clave de asalto, garantizando una intervención policial inmediata.</p></td>
+                        <td><img src="imagenes/control-de-acceso/0-icono-tilde-verde.svg"></td>
+                        <td><img src="imagenes/control-de-acceso/0-icono-tilde-verde.svg"></td>
+                        <td><img src="imagenes/control-de-acceso/0-icono-tilde-verde.svg"></td>
+                      </tr>
+
+                      <tr class="fila-6" data-aos="fade-down">
+                        <td scope="row"><p><img src="imagenes/control-de-acceso/icono-altas-y-bajas.svg"> Altas y Bajas Ilimitadas</p><p>Podrás administrar de manera flexible la lista de accesos, con la capacidad de añadir o remover usuarios según se requiera.</p></td>
+                        <td><img src="imagenes/control-de-acceso/0-icono-tilde-verde.svg"></td>
+                        <td><img src="imagenes/control-de-acceso/0-icono-tilde-verde.svg"></td>
+                        <td><img src="imagenes/control-de-acceso/0-icono-tilde-verde.svg"></td>
+                      </tr>
+
+                      <tr class="fila-7" data-aos="fade-down">
+                        <td scope="row"><p><img src="imagenes/control-de-acceso/icono-reporte-de-ingresos.svg"> Reporte y Alertas</p><p>Monitoreamos y registramos cualquier intento de acceso anómalo o fuera de horario, manteniendo un registro detallado para revisión.</p></td>
+                        <td><img src="imagenes/control-de-acceso/0-icono-tilde-verde.svg"></td>
+                        <td><img src="imagenes/control-de-acceso/0-icono-tilde-verde.svg"></td>
+                        <td><img src="imagenes/control-de-acceso/0-icono-tilde-verde.svg"></td>
+                      </tr>
+
+                      <tr class="fila-8" data-aos="fade-down">
+                        <td scope="row"><p><img src="imagenes/control-de-acceso/icono-apertura-remota.svg"> Apertura Remota de Emergencia</p><p>En caso de emergencias, podemos facilitar el acceso a servicios de emergencia, garantizando una respuesta rápida y eficiente.</p></td>
+                        <td><img src="imagenes/control-de-acceso/0-icono-tilde-verde.svg"></td>
+                        <td><img src="imagenes/control-de-acceso/0-icono-tilde-verde.svg"></td>
+                        <td><img src="imagenes/control-de-acceso/0-icono-tilde-verde.svg"></td>
+                      </tr>
+
+                      <tr class="fila-9" data-aos="fade-down">
+                        <td scope="row"><p><img src="imagenes/control-de-acceso/icono-auto-check.svg"> Botón de Pánico Virtual</p><p>Los residentes cuentan con una aplicación móvil con tres botones conectados directamente a nuestra Central de Monitoreo: bomberos, policía o ambulancia.</p></td>
+                        <td><img src="imagenes/control-de-acceso/0-icono-cruz-roja.svg"></td>
+                        <td><img src="imagenes/control-de-acceso/0-icono-tilde-verde.svg"></td>
+                        <td><img src="imagenes/control-de-acceso/0-icono-tilde-verde.svg"></td>
+                      </tr>
+
+                      <tr class="fila-10" data-aos="fade-down">
+                        <td scope="row"><p><img src="imagenes/control-de-acceso/icono-aviso-puerta.svg"> Aviso de Puerta de Ingreso Abierta</p><p>Nuestros operadores garantizan que todas las entradas se mantengan seguras, alertando sobre cualquier barrera o portón que no se haya cerrado correctamente.</p></td>
+                        <td><img src="imagenes/control-de-acceso/0-icono-cruz-roja.svg"></td>
+                        <td><img src="imagenes/control-de-acceso/0-icono-tilde-verde.svg"></td>
+                        <td><img src="imagenes/control-de-acceso/0-icono-tilde-verde.svg"></td>
+                      </tr>
+
+                      <tr class="fila-11" data-aos="fade-down">
+                        <td scope="row"><p><img src="imagenes/control-de-acceso/icono-identificacion-puerta.svg"> Identificación de Puerta de Ingreso Abierta</p><p>En caso de que alguna entrada permanezca abierta, identificamos rápidamente al responsable y notificamos al consorcio para una acción inmediata, manteniendo la seguridad del perímetro.</p></td>
+                        <td><img src="imagenes/control-de-acceso/0-icono-cruz-roja.svg"></td>
+                        <td><img src="imagenes/control-de-acceso/0-icono-cruz-roja.svg"></td>
+                        <td><img src="imagenes/control-de-acceso/0-icono-tilde-verde.svg"></td>
+                      </tr>
+
+                      <tr class="fila-12" data-aos="fade-down">
+                        <td scope="row"><p><img src="imagenes/control-de-acceso/icono-identificacion-puerta.svg"> Identificación de puerta abierta</p><p>En caso de que el ingreso quede abierto, nuestros operadores detectan al responsable y se lo comunican inmediatamente al consorcio.</p></td>
+                        <td><img src="imagenes/control-de-acceso/0-icono-cruz-roja.svg"></td>
+                        <td><img src="imagenes/control-de-acceso/0-icono-cruz-roja.svg"></td>
+                        <td><img src="imagenes/control-de-acceso/0-icono-tilde-verde.svg"></td>
+                      </tr>
+
+
+                      <tr class="fila-13" data-aos="fade-down">
+                        <td scope="row"><p><img src="imagenes/control-de-acceso/icono-apertura-distancia.svg"> Apertura a distancia</p><p>El vecino puede enviar un código QR temporal a otra persona para que sea validado en el ingreso al edificio y así autorizar su acceso.</p></td>
+                        <td><img src="imagenes/control-de-acceso/0-icono-cruz-roja.svg"></td>
+                        <td><img src="imagenes/control-de-acceso/0-icono-cruz-roja.svg"></td>
+                        <td><img src="imagenes/control-de-acceso/0-icono-tilde-verde.svg"></td>
+                      </tr>
+
+                      <tr class="fila-14" data-aos="fade-down">
+                        <td scope="row"><p><img src="imagenes/control-de-acceso/icono-visualizacion-visitas.svg"> Visualización de Visitas</p><p>Los vecinos pueden acceder desde su celular a las cámaras en vivo para verificar quién está solicitando el ingreso al barrio.</p></td>
+                        <td><img src="imagenes/control-de-acceso/0-icono-cruz-roja.svg"></td>
+                        <td><img src="imagenes/control-de-acceso/0-icono-tilde-verde.svg"></td>
+                        <td><img src="imagenes/control-de-acceso/0-icono-tilde-verde.svg"></td>
+                      </tr>
+
+                      <tr class="fila-15" data-aos="fade-down">
+                        <td scope="row"><p><img src="imagenes/control-de-acceso/icono-servicio-tecnico.svg"> Servicio Técnico</p><p>Incluye mantenimiento periódico del equipamiento y soporte especializado las 24hs en caso de desperfectos técnicos.</p></td>
+                        <td><img src="imagenes/control-de-acceso/0-icono-tilde-verde.svg"></td>
+                        <td><img src="imagenes/control-de-acceso/0-icono-tilde-verde.svg"></td>
+                        <td><img src="imagenes/control-de-acceso/0-icono-tilde-verde.svg"></td>
+                      </tr>
+
+                      <tr class="fila-16" data-aos="fade-down">
+                        <td scope="row"><p><img src="imagenes/control-de-acceso/icono-garantia.svg"> Garantía sin Vencimiento</p><p>Recambio total o parcial del equipo por tiempo indefinido. Esto incluye el reemplazo de la batería en caso de desgaste.</p></td>
+                        <td><img src="imagenes/control-de-acceso/0-icono-tilde-verde.svg"></td>
+                        <td><img src="imagenes/control-de-acceso/0-icono-tilde-verde.svg"></td>
+                        <td><img src="imagenes/control-de-acceso/0-icono-tilde-verde.svg"></td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+            </div>
+
+        </div>
+    </section>
+    <!-- END Tabla controles de acceso -->
+
+
+	<!-- START Texto -->
+	<section class="texto container-fluid">
+		<div class="container">
+			<div class="boxed-text row col-md-8 col-11">
+				<p data-aos="fade-down">
+				    <span>Compatibilidad con shabat</span>
+				</p>
+                <br>
+                <br>
+                <br>
+                <p data-aos="fade-down">
+					Adaptamos nuestro sistema para respetar las prácticas de la Colectividad Judía, desactivando el imán cada 140 segundos para permitir la apertura con llave por un lapso de 30 segundos, al mismo tiempo que el biométrico continúa funcionando para la apertura de la puerta.
+				</p>
+			</div>
+		</div>
+	</section>
+
+    <!-- END Texto -->
+
+
+
+	<!-- START Caja de Imagen -->
+	<section class="container-fluid caja-imagen">
+		<div class="container">
+			<div class="row col-lg-4 col-10">
+				<h2 data-aos="fade-down">Transformá la seguridad de tu barrio 
+                    con Ayax.</h2>
+				<p data-aos="fade-down">Garantizá accesos controlados y seguros en todo momento.
+				</p>
+				<button data-aos="fade-down" class="button-dark">Quiero saber más</button>
+			</div>
+		</div>
+	</section>
+	<!-- END Caja de Imagen -->
+
+
+	<!-- START Section Tambien podria interesarte -->
+	<section class="nuestras-soluciones container-fluid">
+		<div class="container">
+			<div class="row col-12">
+				<h3 data-aos="fade-down">También podría interesarte</h3>
+			</div>
+
+			<div class="row col-12">
+
+				<a href="countrys-seguridad-virtual.html" class="tarjeta-con-hover row col-md-6 col-12">
+					<figure class="card-countrys-seguridad-virtual" data-aos="fade-down">
+						<h3><img src="svg/banda-naranja-individual.svg" class="banda-naranja-individual"> Seguridad Virtual</h3>
+						<div class="capa">
+							<button class="button-dark">Conocer más</button>
+						</div>
+					</figure>
+				</a>
+
+				<a href="countrys-porteria-virtual.html" class="tarjeta-con-hover row col-md-6 col-12">
+					<figure class="card-countrys-porteria-virtual" data-aos="fade-down">
+						<h3><img src="svg/banda-naranja-individual.svg" class="banda-naranja-individual"> Portería virtual</h3>
+						<div class="capa">
+							<button class="button-dark">Conocer más</button>
+						</div>
+					</figure>
+				</a>
+
+			</div>
+
+		</div>
+	</section>
+	<!-- END Tambien podria interesarte -->
+
+
+	<!-- START Footer -->
+	<footer>
+		<div class="container">
+			<div class="row col-12">
+				<div class="col-12 col-md-2 columna-footer logo ">
+					<a href="#"><img src="svg/logo-ayax-light.svg"></a>
+				</div>
+
+				<div class="col-12 col-md-3 col-lg-2 columna-footer">
+					<a href="hogares.html"><h5>Hogar</h5></a>
+					<ul>
+						<li><a href="hogares-seguridad-virtual.html">Seguridad Virtual</a></li>
+						<li><a href="hogares-alarma-y-monitoreo.html">Alarmas y Monitoreo</a></li>
+					</ul>
+				</div>
+
+				<div class="col-12 col-md-3 col-lg-2 columna-footer">
+					<a href="edificios.html"><h5>Edificios</h5></a>
+					<ul>
+						<li><a href="edificios-seguridad-virtual.html">Seguridad Virtual</a></li>
+						<li><a href="edificios-control-de-acceso.html">Control de Acceso</a></li>
+						<li><a href="edificios-porteria-virtual.html">Portería Virtual</a></li>
+						<li><a href="edificios-seguridad-fisica.html">Asistente Virtual</a></li>
+						<li><a href="edificios-asistente-virtual.html">Seguridad Física</a></li>
+					</ul>
+				</div>
+
+				<div class="col-12 col-md-3 col-lg-2 columna-footer">
+					<a href="countrys.html"><h5>Countrys</h5></a>
+					<ul>
+						<li><a href="countrys-seguridad-virtual.html">Seguridad Virtual</a></li>
+						<li><a href="countrys-control-de-acceso.html">Control de Acceso</a></li>
+						<li><a href="countrys-porteria-virtual.html">Portería Virtual</a></li>
+					</ul>
+				</div>
+
+				<div class="col-12 col-md-3 col-lg-2 columna-footer">
+					<a href="fabricas-y-comercios.html"><h5>Fábricas y Comercios</h5></a>
+					<ul>
+						<li><a href="fabricas-y-comercios-seguridad-virtual.html">Seguridad Virtual</a></li>
+						<li><a href="fabricas-y-comercios-alarmas-y-monitoreo.html">Alarmas y Monitoreo</a></li>
+						<li><a href="fabricas-y-comercios-control-de-acceso.html">Control de Acceso</a></li>
+						<li><a href="fabricas-y-comercios-porteria-virtual.html">Portería Virtual</a></li>
+						<li><a href="fabricas-y-comercios-seguridad-fisica.html">Seguridad Física</a></li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</footer>
+	<!-- END Footer -->
+
+
+</body>
+<!-- Script Animaciones AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- Script JS -->
+<script type="text/javascript" src="scripts/script.js"></script>
+<!-- Script Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+	crossorigin="anonymous"></script>
+
+</html>

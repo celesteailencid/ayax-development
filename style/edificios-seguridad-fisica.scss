@@ -1,0 +1,227 @@
+/*START Importaciones*/
+@import "variables";
+@import "estilos-generales";
+@import "header";
+@import "cajas-con-iconos";
+@import "footer";
+/*END Importaciones*/
+
+/*START Opening section with background image*/
+section.hero-with-form {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/A-tamano/Banners/Edificios/Seguridad\ privada.png");
+	min-height: fit-content;
+	padding-top: 16vh;
+}
+
+/*END Opening section with background image*/
+
+
+/*START Div con imagen fondo derecha*/
+img.imagen-fondo-derecha {
+	height: 600px;
+
+	@media only screen and (max-width: 1290px) {
+		display: none !important;
+	}
+
+	@media only screen and (min-width: 1290px) {
+		display: block !important;
+	}
+}
+
+/*END Div con imagen fondo izquierda*/
+
+
+/*START Section boxed text*/
+section.boxed-text-siempre-protegido {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	border-bottom: none;
+	padding-top: 96px;
+
+	@media only screen and (max-width: 768px) {
+		padding-top: 64px;
+	}
+
+	div.caja-titulos {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		h2:nth-child(1) {
+			color: $accent-color-2;
+		}
+
+		h2:nth-child(2) {
+			color: $accent-color-1;
+			margin-left: 16px;
+		}
+
+	}
+}
+
+/*END Section boxed text*/
+
+
+/*START Section Tarjetas Como funciona*/
+section.boxed-text-tarjetas {
+	padding-top: 0;
+
+	div.row {
+		display: flex;
+		justify-content: center;
+		align-items: stretch;
+		align-content: center;
+	}
+
+	h3 {
+		color: $accent-color-1;
+		text-align: center;
+	}
+
+	div.card-caja-servicio-gris {
+		margin: 10px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		background-color: #F6F6F6;
+		padding: 20px;
+		padding-bottom: 0;
+		border: solid 1px #F6F6F6;
+		border-radius: 10px;
+
+		div.caja-imagen-blanca {
+			padding: 0;
+			height: 50px;
+			width: 50px;
+
+			img {
+				height: 25px;
+				;
+			}
+		}
+
+		p:nth-child(2) {
+			color: $accent-color-1;
+			font-size: 20px;
+			line-height: 150%;
+			margin-bottom: 15px;
+			margin-top: 20px;
+			font-weight: 700;
+		}
+
+		h2:nth-child(3) {
+			color: $accent-color-1;
+			margin-top: 0;
+		}
+
+		p {
+			font-size: 16px;
+			line-height: 150%;
+		}
+	}
+}
+
+/*END Section Tarjetas Como funciona*/
+
+
+/*START Caja de imagen*/
+section.caja-imagen {
+	min-height: fit-content;
+	background-image: url("../imagenes/edificio-caja-imagen.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border: none;
+
+	@media only screen and (max-width: 992px) {
+		background: $accent-color-2;
+	}
+
+    div.row {
+        justify-content: flex-end;
+    }
+
+	div.container {
+		justify-content: flex-end;
+		align-items: flex-end;
+		text-align: right;
+		@media only screen and (max-width: 992px) {
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			margin-left: auto;
+			padding-right: auto;
+		}
+		h2,	h3,	p {
+			color: #fff;
+		}
+		h2 {
+			font-size: 36px;
+			line-height: 125%;
+		}
+		p {
+			font-size: 18px;
+			line-height: 150%;
+		}
+		button {
+			width: fit-content;
+		}
+		div {
+			@media only screen and (max-width: 992px) {
+				justify-content: center;
+			}
+		}
+	}
+}
+/*END Caja de imagen*/
+
+
+/*START Section Tambien podria interesarte*/
+section.nuestras-soluciones {
+	align-items: center;
+	justify-content: center;
+	padding-top: 96px;
+	padding-bottom: 96px;
+
+	div.row {
+		justify-content: center;
+
+		&:first-child {
+			h3 {
+				color: $accent-color-1;
+			}
+		}
+	}
+
+	a.tarjeta-con-hover {
+		height: 380px;
+		@media only screen and (max-width: 769px) {
+			margin-bottom: 10px;
+		}
+	
+		figure:hover > h3 {
+			bottom: 25%;
+		}
+	
+		@media only screen and (max-width: 769px) {
+			figure {
+				.capa {
+					opacity: 1;
+					visibility: visible;
+				}
+				h3 {
+					font-size: 24px;
+					bottom: 27%;
+				}
+			}
+		}
+	}
+
+}
+
+/*END Section Tambien podria interesarte*/

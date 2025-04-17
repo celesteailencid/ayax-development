@@ -1,0 +1,145 @@
+/*START Importaciones*/
+@import "variables";
+@import "estilos-generales";
+@import "header";
+@import "cajas-con-iconos";
+@import "footer";
+/*END Importaciones*/
+
+/*START Opening section with background image*/
+section.hero-with-form {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/A-tamano/Banners/Fabricas\ y\ comercios.png");
+	min-height: fit-content;
+	padding-top: 16vh;
+	img {
+		margin-left: 0;
+		margin-bottom: 20px;
+        height: 40px;
+
+		@media only screen and (max-width: 992px) {
+			margin: 0 auto;
+			margin-top: 30px;
+		}
+	}
+}
+/*END Opening section with background image*/
+
+/*START Boxed Text Cuidamos a los que mas queres*/
+section.cuidamos {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	background-image: url("../svg/fondo-gris-diagonales-bottom.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position-y: 100%;
+	border-bottom: none;
+	padding-bottom: 10vh;
+
+	h2:nth-child(1) {
+		color: $accent-color-2;
+		margin-bottom: 0;
+	}
+
+	h2:nth-child(2) {
+		color: $accent-color-1;
+		margin-top: 0;
+	}
+}
+/*END Boxed Text Cuidamos a los que mas queres*/
+
+
+/*START Section Nuestras Soluciones*/
+section.nuestras-soluciones {
+	background-color: $background-color-secondary;
+	border-top: none;
+
+	h2 {
+		color: $accent-color-1;
+		text-align: center;
+		font-size: 36px;
+		line-height: 125%;
+		margin-bottom: 50px;
+	}
+
+    div.card {
+        margin-bottom: 25px;
+    }
+    div.row {
+        justify-content: center;
+    }
+}
+/*END Section Nuestras Soluciones*/
+
+
+/*START Caja de imagen*/
+section.caja-imagen {
+	min-height: fit-content;
+	background-image: url("../imagenes/caja-imagen-fabricas.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border: none;
+
+	@media only screen and (max-width: 992px) {
+		background: $accent-color-2;
+	}
+
+    div.row {
+        justify-content: center;
+    }
+
+	div.container {
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		@media only screen and (max-width: 992px) {
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			margin-left: auto;
+			padding-right: auto;
+		}
+		h2,	h3,	p {
+			color: #fff;
+		}
+		h2 {
+			font-size: 36px;
+			line-height: 125%;
+		}
+		p {
+			font-size: 18px;
+			line-height: 150%;
+		}
+		button {
+			width: fit-content;
+		}
+		div {
+			@media only screen and (max-width: 992px) {
+				justify-content: center;
+			}
+		}
+	}
+}
+/*END Caja de imagen*/
+
+
+/*START Section Tambien podria interesarte*/
+section.tambien-podria-interesarte {
+	align-items: center;
+	justify-content: center;
+	padding-top: 96px;
+	padding-bottom: 96px;
+	min-height: fit-content;
+
+		h2 {
+			color: $accent-color-1;
+			text-align: center;
+			font-size: 36px;
+			line-height: 125%;
+		}
+}
+
+/*END Section Tambien podria interesarte*/

@@ -1,0 +1,21 @@
+/*START Caja con icono*/
+div.caja-imagen-naranja {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80px;
+	width: 80px;
+	background-color: #FFF6EF;
+	border-radius: 10px;
+}
+
+div.caja-imagen-blanca {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80px;
+	width: 80px;
+	background-color: #fff;
+	border-radius: 10px;
+}
+/*END Caja con icono*/

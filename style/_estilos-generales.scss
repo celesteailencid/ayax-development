@@ -1,0 +1,626 @@
+/*START Estilos generales */
+@media only screen and (min-width: 992px) {
+	.navbar .dropdown:hover .dropdown-menu {
+		display: block;
+	}
+}
+
+.desktop-lg-visible {
+	@media only screen and (max-width: 1200px) {
+		display: none !important;
+	}
+
+	@media only screen and (min-width: 1200px) {
+		display: block !important;
+	}
+}
+
+.mobile-visible {
+	@media only screen and (max-width: 992px) {
+		display: block !important;
+	}
+}
+
+.mobile-center {
+	@media only screen and (max-width: 992px) {
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+body {
+	font-family: $font-family-primary;
+}
+
+a {
+	text-decoration: none;
+	transition: all 0.5s ease-in-out;
+	opacity: 1;
+
+	&:hover {
+		color: $accent-color-1;
+	}
+
+	h5 {
+		text-decoration: none;
+		transition: all 0.5s ease;
+
+		&:hover {
+			color: $accent-color-1;
+		}
+	}
+}
+
+i:hover {
+	color: $accent-color-1;
+}
+
+.nav-link:hover {
+	color: $accent-color-1;
+}
+
+h1 {
+	font-size: 72px;
+	margin: 1em 0 1em 0;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 48px;
+	margin: 1em 0 1em 0;
+	font-weight: 700;
+	line-height: 125%;
+}
+
+h3 {
+	font-size: 36px;
+	margin: 1em 0 1em 0;
+	font-weight: 700;
+}
+
+h4 {
+	font-size: 24px;
+	margin: 1em 0 1em 0;
+	font-weight: 700;
+	line-height: 125%;
+}
+
+p {
+	font-size: 20px;
+	line-height: 150%;
+}
+
+input {
+	border-radius: 10px;
+	background-color: transparent;
+	height: 50px;
+	margin: 0.5em 0 1em 0;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+select {
+	border-radius: 10px;
+	background-color: transparent;
+	height: 50px;
+	margin: 0.5em 0 1em 0;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+button {
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	border-radius: 10px;
+	margin: 1em 0 1em 0;
+	width: fit-content;
+	transition: 0.5s ease;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 125%;
+}
+
+.button-dark {
+	background: $linear-orange;
+	color: $font-color-light;
+
+	&:hover {
+		background: $linear-orange-light;
+		color: $accent-color-1;
+	}
+}
+
+.button-light {
+	background: $linear-orange-light;
+	color: $accent-color-1;
+
+	&:hover {
+		background: $linear-orange;
+		color: $font-color-light;
+	}
+}
+
+ul {
+	list-style: none;
+
+	li {
+		flex-wrap: nowrap;
+	}
+}
+
+ul.dropdown-menu {
+	left: auto !important;
+}
+
+section {
+	min-height: fit-content;
+	padding-top: 7vh;
+	padding-bottom: 7vh;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	align-items: center;
+	@media only screen and (max-width: 768px) {
+		padding-top: 12vh;
+	}
+}
+
+/*SECTION OPENING CON FORM*/
+section.hero-with-form {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-position-y: top;
+	background-position-x: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	div.container {
+		display: flex;
+		align-items: center;
+		height: fit-content;
+
+		div.row {
+			align-items: center;
+			justify-content: space-between;
+
+			@media only screen and (max-width: 992px) {
+				justify-content: center;
+			}
+
+			div.container-title {
+				display: flex;
+				flex-direction: column;
+				text-align: left;
+				align-items: start;
+				justify-content: center;
+
+				@media only screen and (max-width: 992px) {
+					justify-content: start;
+					text-align: center;
+					height: fit-content;
+					margin-left: 0;
+					align-items: center;
+				}
+
+				h1 {
+					color: $font-color-light;
+					padding: 0;
+					margin-bottom: 40px;
+					margin-top: 0px;
+					font-size: 64px;
+
+					@media only screen and (max-width: 992px) {
+						font-size: 50px;
+					}
+				}
+
+				div.breadcrumb {
+					border: solid 1px $background-color-secondary;
+					border-radius: 8px;
+					display: flex;
+					justify-content: center;
+					padding: 5px 10px;
+					p {
+					font-size: 14px;
+					line-height: 170%;
+					color: $background-color-secondary;
+					margin: 0 auto;
+					}
+					img {
+						height: 20px;
+						margin-right: 12px;
+					}
+				}
+			}
+
+			div.container-form {
+				background-color: rgba(0, 0, 0, 0.5);
+				text-align: left;
+				color: #fff;
+				border-radius: 20px;
+				height: fit-content;
+				align-items: center;
+				padding: 30px;
+
+				h3 {
+					font-weight: 700;
+					font-size: 24px;
+					line-height: 150%;
+					text-align: center;
+				}
+
+				form {
+					height: max-content;
+
+					input {
+						width: 100%;
+						border-radius: 10px;
+						background-color: transparent;
+						border: solid 1px rgba(255, 255, 255, 0.5);
+						color: #fff;
+						margin-top: 0;
+					}
+					input:nth-child(6) {
+						height: 90px;
+					}
+
+					button.button-dark {
+						margin-top: 0;
+						text-align: center;
+					}
+					label {
+						font-size: 14px;
+						line-height: 170%;
+					}
+					p:last-child {
+						font-size: 14px;
+						line-height: 170%;
+					}
+				}
+			}
+		}
+	}
+}
+/*SECTION OPENING CON FORM*/
+
+
+span {
+	font-weight: 700;
+}
+
+div.boxed-text {
+	justify-content: center;
+}
+
+div.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+.card-hogares {
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../imagenes/A-tamano/Cards/Hogares.png");
+	background-size: cover;
+}
+
+.card-edificios {
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../imagenes/A-tamano/Cards/Edificios.png");
+	background-size: cover;
+}
+
+.card-barrios {
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../imagenes/A-tamano/Cards/Countrys.png");
+	background-size: cover;
+}
+
+.card-countrys {
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../imagenes/A-tamano/Cards/Countrys.png");
+	background-size: cover;
+}
+
+.card-empresas {
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../imagenes/A-tamano/Cards/Fabricas\ y\ comercios.png");
+	background-size: cover;
+}
+
+.card-seguridad-virtual {
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../imagenes/A-tamano/Cards/Hogar/Seguridad-virtual.png");
+	background-size: cover;
+}
+
+.card-seguridad-virtual-2 {
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../imagenes/A-tamano/Cards/Edificios/Seguridad\ virtual.png");
+	background-size: cover;
+}
+
+.card-alarmas-y-monitoreo {
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../imagenes/A-tamano/Cards/Hogar/Alarmas-y-monitoreo.png");
+	background-size: cover;
+}
+
+.card-control-de-acceso {
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../imagenes/A-tamano/Cards/Edificios/Control\ de\ accesos.png");
+	background-size: cover;
+}
+
+.card-porteria-virtual {
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../imagenes/A-tamano/Cards/Edificios/Porteria\ virtual.png");
+	background-size: cover;
+}
+
+.card-seguridad-fisica {
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../imagenes/A-tamano/Cards/Edificios/Seguridad\ privada.png");
+	background-size: cover;
+}
+
+.card-asistente-virtual {
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../imagenes/A-tamano/Cards/Edificios/Asistente\ virtual.png");
+	background-size: cover;
+}
+
+.card-alarmas-y-monitoreo {
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../imagenes/A-tamano/Cards/Hogar/Alarmas-y-monitoreo.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.card-edificios-seguridad-virtual {
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../imagenes/A-tamano/Cards/Edificios/Seguridad\ virtual.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.card-edificios-alarmas-y-monitoreo {
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../imagenes/A-tamano/Cards/Edificios/Seguridad\ virtual.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.card-edificios-control-de-acceso {
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../imagenes/A-tamano/Cards/Edificios/Control\ de\ accesos.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.card-edificios-porteria-virtual {
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../imagenes/A-tamano/Cards/Edificios/Porteria\ virtual.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.card-edificios-asistente-virtual {
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../imagenes/A-tamano/Cards/Edificios/Asistente\ virtual.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.card-edificios-seguridad-fisica {
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../imagenes/A-tamano/Cards/Edificios/Seguridad\ privada.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.card-countrys-seguridad-virtual {
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../imagenes/A-tamano/Cards/Countrys/Seguridad\ virtual.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.card-countrys-alarmas-y-monitoreo {
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../imagenes/A-tamano/Cards/Hogar/Alarmas-y-monitoreo.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.card-countrys-control-de-acceso {
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../imagenes/A-tamano/Cards/Countrys/Control\ de\ acceso.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.card-countrys-porteria-virtual {
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../imagenes/A-tamano/Cards/Countrys/Porteria\ virtual.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.card-countrys-seguridad-fisica {
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../imagenes/card-countrys-seguridad-fisica.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.card-fabricas-seguridad-virtual {
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../imagenes/A-tamano/Cards/Fabricas-y-comercios/Seguridad\ virtual.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.card-fabricas-alarmas-y-monitoreo {
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../imagenes/A-tamano/Cards/Fabricas-y-comercios/Alarmas\ y\ monitoreo.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.card-fabricas-control-de-acceso {
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../imagenes/A-tamano/Cards/Fabricas-y-comercios/Control\ de\ accesos.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.card-fabricas-seguridad-fisica {
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../imagenes/A-tamano/Cards/Fabricas-y-comercios/Seguridad\ física.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.card-fabricas-porteria-virtual {
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../imagenes/A-tamano/Cards/Fabricas-y-comercios/Porteria\ virtual.png");
+	background-size: cover;
+	background-position: center;
+}
+
+/*END Estilos generales */
+
+
+/*START Tarjeta con hover*/
+a.tarjeta-con-hover {
+	height: 500px;
+	border-radius: 20px;
+	display: flex;
+	justify-content: end;
+	align-items: start;
+	color: $font-color-light;
+	font-weight: 600;
+	transition: 0.3s ease-in-out;
+	padding: 23px;
+	padding-bottom: 15px;
+	text-align: left;
+
+	@media only screen and (max-width: 769px) {
+		margin-bottom: 30px;
+	}
+
+	figure {
+
+		height: 100%;
+		overflow: hidden;
+		border-radius: 16px;
+		padding: 0;
+		
+
+		h3 {
+			position: absolute;
+			bottom: 20px;
+			left: 30px;
+			color: $font-color-light;
+			font-size: 24px;
+			margin-bottom: 10px;
+			z-index: 99;
+			transition: all 500ms ease-out;
+			padding-right: 3px;
+
+			@media only screen and (max-width: 769px) {
+				left: 20px;
+				bottom: 17%;
+			}
+
+			img.banda-naranja-individual {
+				height: 30px;
+				width: 30px;
+				object-fit: contain;
+			}
+		}
+
+		.capa {
+			display: flex;
+			flex-direction: column;
+			position: absolute;
+			top: 0;
+			height: 100%;
+			width: 100%;
+			opacity: 0;
+			transition: all 500ms ease-out;
+			visibility: hidden;
+			text-align: left;
+			padding-left: 30px;
+			padding-bottom: 30px;
+			justify-content: end;
+
+			@media only screen and (max-width: 769px) {
+				padding-left: 20px;
+				padding-bottom: 15px;
+			}
+		}
+	}
+
+	figure:hover > .capa {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	figure:hover > h3 {
+		bottom: 22%;
+	}
+
+	@media only screen and (max-width: 769px) {
+		figure {
+			.capa {
+				opacity: 1;
+				visibility: visible;
+			}
+			h3 {
+				font-size: 24px;
+			}
+		}
+	}
+}
+/*END Tarjeta con hover*/
+
+/*START Cards servicios*/
+a.tarjeta-con-hover {
+
+	h3 {
+		color: $font-color-light;
+		font-size: 24px;
+	}
+
+	img {
+		height: 24px;
+	}
+
+	&:hover {
+		filter: brightness(150%);
+	}
+}
+/*END Cards servicios*/
+
+
+/*START Cards servicios generales Hogares Edificios Countrys Fabricas*/
+div.card {
+	height: 500px;
+	border-radius: 20px;
+	display: flex;
+	justify-content: end;
+	align-items: start;
+	color: $font-color-light;
+	font-weight: 600;
+	transition: 0.3s ease-in-out;
+	padding-left: 30px;
+	padding-bottom: 15px;
+	text-align: left;
+
+	p {
+		font-size: 18px;
+		line-height: 150%;
+	}
+
+	h3 {
+		color: $font-color-light;
+		font-size: 24px;
+	}
+
+	img {
+		height: 24px;
+	}
+
+	&:hover {
+		filter: brightness(150%);
+	}
+}
+/*END Cards servicios generales Hogares Edificios Countrys Fabricas*/
+
+
+
+.row {
+	justify-content: center;
+}

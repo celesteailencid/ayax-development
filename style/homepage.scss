@@ -1,0 +1,242 @@
+/*START Importaciones*/
+@import "variables";
+@import "estilos-generales";
+@import "header";
+@import "cajas-con-iconos";
+@import "footer";
+/*END Importaciones*/
+
+/*START Opening section with background image*/
+section.opening {
+	background-position-y: top;
+	background-position-x: center;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../imagenes/foto-familia.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 100vh;
+
+	div.container {
+		align-items: flex-start;
+		div.container-title {
+			height: 80vh;
+			flex-direction: column;
+			text-align: left;
+			align-items: left;
+			justify-content: center;
+
+			@media only screen and (min-width: 992px) {
+				margin-left: 0;
+			}
+
+			h1 {
+				color: $font-color-light;
+				padding: 0;
+				margin-bottom: 40px;
+				font-weight: 600;
+
+				@media only screen and (min-width: 992px) {
+					font-size: 72px;
+				}
+			}
+
+			p {
+				color: $font-color-light;
+				font-size: 20px;
+			}
+
+			button {
+				margin-top: 40px;
+			}
+		}
+	}
+}
+
+/*END Opening section with background image*/
+
+
+/*START Section Somos Ayax*/
+section.boxed-text-somos-ayax {
+	background-image: url("../imagenes/fondo-gris-oscuro-100-con-diagonales-en-fondo.svg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	border-bottom: none;
+	min-height: fit-content;
+	padding-bottom: 12vh;
+
+	div.boxed-text {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	div.container-titles {
+		display: flex;
+		text-align: center;
+		justify-content: center;
+	
+		h2:nth-child(1) {
+			color: $accent-color-2;
+			margin-right: 5px;
+		}
+	
+		h2:nth-child(2) {
+			color: $accent-color-1;
+			margin-left: 5px;
+		}
+	}
+
+	div.frases-naranjas {
+		margin-top: 50px;
+		margin-bottom: 20px;
+		justify-content: space-between;
+		font-weight: 700;
+
+		div {
+			text-align: start;
+
+			img {
+				margin-right: 7px;
+			}
+		}
+
+		div.frases-columna-izquierda {
+			display: flex;
+			flex-direction: column;
+
+			p {
+				color: $accent-color-1;
+			}
+		}
+
+		div.frases-columna-derecha {
+			p {
+				color: $accent-color-1;
+			}
+		}
+	}
+}
+
+/*END Section Somos Ayax*/
+
+
+/*START Section Conoce Nuestras Soluciones*/
+section.home-servicios {
+	align-items: center;
+	justify-content: center;
+	padding-top: 10vh;
+	padding-bottom: 96px;
+	min-height: fit-content;
+
+	div.card {
+		height: 400px;
+	}
+
+	div.titulos {
+		h2 {
+			text-align: center;
+			font-weight: 600;
+		}
+
+		h2:first-child {
+			color: $accent-color-2;
+			margin-bottom: 0;
+		}
+
+		h2:last-child {
+			color: $accent-color-1;
+		}
+	}
+}
+
+.card-hogares {
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../imagenes/card-services-hogares.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.card-edificios {
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../imagenes/card-services-edificios.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.card-barrios {
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../imagenes/card-services-barrio-cerrado.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.card-empresas {
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../imagenes/card-services-comercios.png");
+	background-size: cover;
+	background-position: center;
+}
+
+/*END Section Conoce Nuestras Soluciones*/
+
+
+/*START Formulario de contacto*/
+section.contact-form {
+	min-height: fit-content;
+	padding-top: 3vh;
+	padding-bottom: 12vh;
+
+	div.row {
+		div.formulario {
+			background-color: #fff;
+			border: solid 1px #E2E2E8;
+			border-radius: 20px;
+			padding: 50px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			height: fit-content;
+
+			.form-left {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				text-align: left;
+				height: auto;
+
+				img {
+					height: 130px;
+					@media only screen and (max-width: 992px) {
+					display: none;
+					}
+					h2 {
+						font-size: 30px;
+					}
+				}
+			}
+			.form-right {
+				display: flex;
+				flex-direction: column;
+				align-content: space-between;
+				height: auto;
+				text-align: left;
+
+				form {
+					input {
+						border: solid 1px #E2E2E8;
+						color: #000;
+						width: 95%;
+					}
+
+					select {
+						border: solid 1px #E2E2E8;
+						color: #000;
+						width: 95%;
+					}
+					p:last-child {
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+}
+/*END Formulario de contacto*/
